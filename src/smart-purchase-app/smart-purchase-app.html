@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="smart-purchase-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class SmartPurchaseApp extends Polymer.Element {
+      static get is() { return 'smart-purchase-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'smart-purchase-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(SmartPurchaseApp.is, SmartPurchaseApp);
+  </script>
+</dom-module>

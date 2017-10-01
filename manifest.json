@@ -1,0 +1,6 @@
+{
+  "name": "smart-purchase",
+  "short_name": "smart-purchase",
+  "start_url": "/",
+  "display": "standalone"
+}
